@@ -1,4 +1,4 @@
-# new.status.imink.app
+# status.imink.app
 
 ## Project setup
 ```
