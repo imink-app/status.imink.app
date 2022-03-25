@@ -1,24 +1,5 @@
 # status.imink.app
 
-## Project setup
-```
-npm install
-```
+Show the status of the imink service.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Please visit https://status.imink.app
