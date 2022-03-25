@@ -10,7 +10,7 @@ const fs = require("fs");
         // Understand if it's dist or build folder
         const folderName = fs.existsSync("dist") ? "dist" : "build";
         // eslint-disable-next-line no-unused-vars
-        fs.writeFile(folderName + '/CNAME', "status.imink.app", function(err) {});
+        await fs.writeFileSync(folderName + '/CNAME', "status.imink.app");
         await execa("git", ["--work-tree", folderName, "add", "--all"]);
         await execa("git", ["--work-tree", folderName, "commit", "-m", "gh-pages"]);
         console.log("Pushing to gh-pages...");
