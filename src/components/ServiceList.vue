@@ -13,8 +13,8 @@
       <tbody>
       <tr v-for="item in items" :key="item.id" class="h-20">
         <th class="content-center">
-          <x-circle-icon v-if="item.status.isDegraded" class="h-8 w-8 text-red-500"/>
-          <exclamation-circle-icon v-else-if="item.status.hasErrors || item.status.hasFailures" class="h-8 w-8 text-yellow-400"/>
+          <x-circle-icon v-if="item.status.hasErrors || item.status.hasFailures" class="h-8 w-8 text-red-500"/>
+          <exclamation-circle-icon v-else-if="item.status.isDegraded" class="h-8 w-8 text-yellow-400"/>
           <check-circle-icon v-else class="h-8 w-8 text-green-500"/>
         </th>
         <td>
