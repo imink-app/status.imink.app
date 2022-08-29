@@ -7,7 +7,7 @@
     </div>
     <div class="flex-none h-10 hidden md:flex">
       <ul class="menu menu-horizontal p-0">
-        <li><a href="https://imink.app">imink.app</a></li>
+        <li><a href="https://github.com/JoneWang/imink">imink</a></li>
         <li><a href="https://github.com/imink-app/status.imink.app">Github</a></li>
         <li>
           <label class="swap swap-rotate">

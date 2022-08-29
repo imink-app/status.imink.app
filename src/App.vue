@@ -2,8 +2,8 @@
   <div class="container max-w-3xl md:w-screen px-4">
     <navigation-bar class="my-8"/>
     <p class="mx-8">
-      This page provides status information on the services that are part of <a href="https://imink.app"
-                                                                                class="link link-primary">imink.app</a>.
+      This page provides status information on the services that are part of <a href="https://github.com/JoneWang/imink"
+                                                                                class="link link-primary">imink</a>.
       If the listed status does not solve the problem you are experiencing, please contact <a
         class="link link-primary" href="mailto:agent@imink.app">Agent</a>.
     </p>
