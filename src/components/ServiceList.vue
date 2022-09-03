@@ -1,6 +1,6 @@
 <template>
   <div class="shadow-xl rounded-lg neutral-content overflow-x-auto">
-    <table class="table service">
+    <table class="table service w-full">
       <thead>
       <tr>
         <th>Status</th>
