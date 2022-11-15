@@ -29,7 +29,7 @@ import GlobalFooter from "@/components/GlobalFooter";
 
 const getServiceData = async () => {
   try {
-    const checklyhqDashboardId = '29bde466'
+    const checklyhqDashboardId = 'fcd08320'
 
     const statusesResponse = await axios.get('https://api.checklyhq.com/v1/dashboards/' + checklyhqDashboardId + '/statuses')
     const results = statusesResponse.data.results
