@@ -31,20 +31,12 @@ const getServiceData = async () => {
   try {
     const checklyhqDashboardId = '29bde466'
 
-    const dashboardResponse = await axios.get('https://api.checklyhq.com/v1/dashboards/' + checklyhqDashboardId + '?type=customUrl')
-    const accountId = dashboardResponse.data.accountId
-    const sign = dashboardResponse.headers['x-signed-dashboard']
-
-    const statusesResponse = await axios.get('https://api.checklyhq.com/v1/dashboards/' + checklyhqDashboardId + '/statuses?type=customDomain&accountId=' + accountId, {
-      headers: {'x-signed-dashboard': sign}
-    })
+    const statusesResponse = await axios.get('https://api.checklyhq.com/v1/dashboards/' + checklyhqDashboardId + '/statuses')
     const results = statusesResponse.data.results
 
     for (const i in results) {
       const result = results[i]
-      const respTimeInfoResponse = await axios.get('https://api.checklyhq.com/v1/dashboards/fcd08320/results/' + result.id, {
-        headers: {'x-signed-dashboard': sign}
-      })
+      const respTimeInfoResponse = await axios.get('https://api.checklyhq.com/v1/dashboards/fcd08320/results/' + result.id)
       let data = respTimeInfoResponse.data
 
       const dataCopy = [...data]
